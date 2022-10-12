@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/vehicleFragment">
+    <fragment
+        android:id="@+id/vehicleFragment"
+        android:name="com.example.rides.fragments.VehicleListFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_vehicle_list">
+      <action
+            android:id="@+id/action_startFragment_to_flavorFragment"
+            app:destination="@id/vehicleDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vehicleDetailFragment"
+        android:name="com.example.rides.fragments.VehicleDetailsFragment"
+        android:label="@string/details"
+        tools:layout="@layout/fragment_vehicle_details">
+    </fragment>
+
+
+</navigation>

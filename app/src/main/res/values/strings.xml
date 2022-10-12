@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Rides</string>
+    <string name="enter_number">Please Enter Number</string>
+    <string name="submit">Submit</string>
+    <string name="details">Vehicle Details</string>
+
+</resources>
