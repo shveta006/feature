@@ -41,20 +41,29 @@
         android:gravity="center"
         android:padding="10dp"
         android:textSize="20sp"
-        android:text="Submit"
+        android:text="@string/submit"
+        android:imeOptions="actionDone"
         app:layout_constraintTop_toTopOf="@+id/recyclerView"
         tools:layout_editor_absoluteX="-16dp" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:paddingBottom="@dimen/dimen_10"
+        >
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:scrollbars="vertical"
-        android:layout_marginBottom="10dp"
-        android:paddingBottom="20dp"
+        android:paddingBottom="@dimen/dimen_10"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 
 

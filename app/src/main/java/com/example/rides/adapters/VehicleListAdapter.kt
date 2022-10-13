@@ -42,6 +42,7 @@ class VehicleListAdapter: RecyclerView.Adapter<MainViewHolder>() {
                 bundle.putString("model",vehicle.make_and_model )
                 bundle.putString("color",vehicle.color )
                 bundle.putString("type",vehicle.car_type )
+                bundle.putInt("kilometre",vehicle.kilometrage )
             Navigation.findNavController(it).navigate(R.id.vehicleDetailFragment,bundle)
         }
 
